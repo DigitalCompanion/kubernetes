@@ -23,3 +23,8 @@ Supports local registry for docker, code and everything needed for a full offlin
 Evaluating https://jenkins-x.io/
 Presentation: https://www.youtube.com/watch?v=BF3MhFjvBTU
 (Jenkins X: Continuous Delivery for Kubernetes with James Strachan)
+
+
+Kubernetes setup via Ansible as of 2022-01-13
+
+ansible-playbook -l k8s-cluster playbooks/k8s-cluster.yml -e kube_version=v1.20.7 -e nvidia_driver_ubuntu_install_from_cuda_repo=yes -e nvidia_driver_ubuntu_branch=495 -k -K
